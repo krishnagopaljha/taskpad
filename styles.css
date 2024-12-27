@@ -1,0 +1,96 @@
+/* General styling */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom right, #2a2a72, #009ffd);
+    color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#container {
+    width: 400px;
+    height: 400px; /* Increased height of the container */
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+/* Header styling */
+header {
+    background: linear-gradient(to right, #ff512f, #dd2476);
+    color: white;
+    padding: 10px; /* Reduced padding to save space */
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 18px; /* Slightly reduced font size */
+    font-weight: 600;
+}
+
+/* Main area styling */
+main {
+    flex-grow: 1;
+    padding: 10px; /* Reduced padding to maximize textarea space */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+textarea {
+    width: 100%;
+    height: calc(100% - 10px); /* Dynamically fills the space in the main area */
+    border: none;
+    outline: none;
+    font-size: 16px;
+    line-height: 1.6;
+    resize: none;
+    padding: 10px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer styling */
+footer {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 10px; /* Reduced padding for a more compact footer */
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#downloadBtn {
+    margin-bottom: 5px; /* Reduced margin to save space */
+    padding: 8px 16px; /* Adjusted button size */
+    font-size: 14px;
+    font-weight: 600;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+#downloadBtn:hover {
+    background: linear-gradient(to right, #0072ff, #00c6ff);
+    transform: scale(1.05);
+}
